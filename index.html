@@ -4,15 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
-
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .iframe-wrapper {
+            height: 800px;
+            width: 700px;
+        }
+        .iframe-wrapper iframe {
+            height: 100%;
+            width: 100%;
+            border: none;
+        }
+    </style>
 </head>
 <body>
     <h1>Hello World</h1>
-    <div style="height: 800px; width: 700px;">
-        <iframe src="https://app.answersfrom.me/tea/index.html#?hubId=m4l9jdoXPM9IFB0B2K0G&color=0000ff&title=My Agent" style="height: 800px; width: 700px;"></iframe>
+    <div class="container">
+    <div class="iframe-wrapper">
+        <iframe src="https://app.answersfrom.me/tea/index.html#?hubId=m4l9jdoXPM9IFB0B2K0G&color=0000ff&title=My Agent" ></iframe>
     </div>
-    <div style="height: 800px; width: 700px;">
-        <iframe src="https://app.answersfrom.me/seeker/index.html#?hubId=m4l9jdoXPM9IFB0B2K0G&color=0000ff&title=My Agent" style="height: 800px; width: 700px;"></iframe>
+    <div class="iframe-wrapper">
+        <iframe src="https://app.answersfrom.me/seeker/index.html#?hubId=m4l9jdoXPM9IFB0B2K0G&color=0000ff&title=My Agent" ></iframe>
+    </div>
     </div>
 </body>
 </html>
